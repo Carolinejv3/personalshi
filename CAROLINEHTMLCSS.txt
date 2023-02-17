@@ -1,0 +1,99 @@
+HTML:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>QUEEN</title>
+</head>
+<body>
+
+    <header>
+         <h1 class="titulo">QUEEN</h1>
+<h2 class="subtitulo">La banda británica que tuvo a Freddie Mercury como vocalista principal</h2>
+    </header>
+
+    <nav>
+    <p class="p1">A finales de 1982 todos los miembros de Queen decidieron que querían separarse temporalmente;<br>
+     estaban nerviosos unos con otros y las discusiones eran cada vez más frecuentes.<br>
+     Llevaban doce años grabando y haciendo giras juntos y consideraron que era hora de darse un respiro.<br>
+     Fue una decisión unánime, y anunciaron que en 1983 no realizarían giras.<br>
+     Decidieron caminos distintos durante ese año y ver lo que pasaba. No consideraban que fuera una “ruptura”,<br>
+      aunque eso fue lo que dijo la prensa. En esta p{agina puedes consultar las fuentes de esta información:<a href="https://www.biografiasyvidas.com/biografia/q/queen.htm"> Click aquí.</a></p> 
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="subtitulo">INFORMACIÓN GENERAL SOBRE LA BANDA:</h2>
+            <article>
+                <header>
+                    <h3 class="listanames">Los Miembros</h3>
+                    <ul class="lista1">
+                        <ol>Jeffrey</ol>
+                        <ol>Freddie</ol>
+                        <ol>Roger</ol>
+                        <ol>Rick</ol>
+                    </ul>
+                </header>
+            </article>
+
+            <article>
+    <br>
+    <p class="p1">Da un click en las imagenes<br><a href="https://www.biografiasyvidas.com/biografia/q/queen.htm">
+    <img src="img/queen.jpg" alt="La banda británica Queen" width="250px" height="200px">
+    <br><br>
+    <a href="https://ibighit.com/bts/eng/"><img src="img/queen2.jpg" alt="La banda británica Queen" width="200px" height="300px"></a>
+    </a></p>
+    </article>
+    
+    <audio controls>
+        <source src="audios/I Want to Break Free-Queen.mp3" type="audio/wav"> 
+    </audio>
+    <br>
+    <video controls>
+        <source src="img/Queen-Somebody To Love Video.mp4" type="video/mp4">
+    </video>
+
+    </section>
+</main>
+</body>
+</html>
+
+
+CSS:
+
+.body{
+    background-color: beige;
+}
+
+.titulo{
+    text-align:center;
+    color:rgb(141, 8, 8);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.subtitulo{
+    text-align: center;
+    color:rgb(92, 58, 58);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.p1{
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.listanames{
+    text-align:center;
+    color:rgb(141, 8, 8);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.lista1{
+    text-align:center;
+}
+    

@@ -1,0 +1,175 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>QUEEN</title>
+</head>
+<body>
+    <main>
+    <header class="banner">
+        <h1>QUEEN</h1>
+        <h3>Tú fuente confiable de farándula</h3>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="archivo.html">Archivos</a></li>
+                <li><a href="acercade.html">A cerca de</a></li>
+                </ul>
+        </nav>
+    <section>
+        
+        <article>
+        
+   <h2>La banda británica que tuvo a Freddie Mercury como vocalista principal</h2>
+       
+    <p>A finales de 1982 todos los miembros de Queen decidieron que querían separarse temporalmente;<br>
+     estaban nerviosos unos con otros y las discusiones eran cada vez más frecuentes.<br>
+     Llevaban doce años grabando y haciendo giras juntos y consideraron que era hora de darse un respiro.<br>
+     Fue una decisión unánime, y anunciaron que en 1983 no realizarían giras.<br>
+     Decidieron caminos distintos durante ese año y ver lo que pasaba. No consideraban que fuera una “ruptura”,<br>
+      aunque eso fue lo que dijo la prensa. En esta página puedes consultar las fuentes de esta información:<a href="https://www.biografiasyvidas.com/biografia/q/queen.htm"> Click aquí.</a></p> 
+    </article>
+</section>
+
+<section>
+    <article>
+    <header>
+<h2>La banda británica que tuvo a Freddie Mercury como vocalista principal</h2>
+   </header>
+<p>A finales de 1982 todos los miembros de Queen decidieron que querían separarse temporalmente;<br>
+ estaban nerviosos unos con otros y las discusiones eran cada vez más frecuentes.<br>
+ Llevaban doce años grabando y haciendo giras juntos y consideraron que era hora de darse un respiro.<br>
+ Fue una decisión unánime, y anunciaron que en 1983 no realizarían giras.<br>
+ Decidieron caminos distintos durante ese año y ver lo que pasaba. No consideraban que fuera una “ruptura”,<br>
+  aunque eso fue lo que dijo la prensa. En esta p{agina puedes consultar las fuentes de esta información:<a href="https://www.biografiasyvidas.com/biografia/q/queen.htm"> Click aquí.</a></p> 
+</article>
+</section>
+
+
+    
+        <section>
+            <h2>INFORMACIÓN GENERAL SOBRE LA BANDA:</h2>
+            <article>
+                <header>
+                    <h3>Los Miembros</h3>
+                    <ul>
+                        <li>Jeffrey</li>
+                        <li>Freddie</li>
+                        <li>Roger</li>
+                        <li>Rick</li>
+                    </ul>
+                </header>
+            </article>
+
+            <section>
+            <article>
+                <h2>MULTIMEDIA</h2>
+    <br>
+    <p>Da un click en las imagenes<br><a href="https://www.biografiasyvidas.com/biografia/q/queen.htm">
+    <img src="img/queen.jpg" alt="La banda británica Queen" width="250px" height="200px">
+    <br><br>
+    <a href="https://ibighit.com/bts/eng/"><img src="img/queen2.jpg" alt="La banda británica Queen" width="200px" height="300px"></a>
+    </a></p>
+    
+    <video controls>
+        <source src="img/Queen-Somebody To Love Video.mp4" type="video/mp4">
+    </video>
+
+</article>
+    </section>
+</main>
+
+<aside>
+    <h2>Danos tú opinion</h2>
+    <p>Si ves noticias en progreso - Envíanos un texto .</p>
+    </aside>
+    
+    <footer>
+    <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+CSS
+
+@charset "UTF-8";
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+display: block;
+}
+html,body,h1,h2,h3,ul,li,a,p,article,aside,footer,header,main,nav,section {
+padding: 0;
+margin: 0;
+}
+.banner {
+background-color: #afafaf;
+color: rgb(0, 0, 0);
+padding: 10px 20px;
+}
+body {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+background-color: #ffffff;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 15px;
+}
+nav {
+background-color: #2d2a49;
+padding: 5px;
+margin-top: 1px;
+}
+li a {
+color: white;
+}
+
+li {
+display: inline;
+margin-left: 15px;
+margin-right: 15px;
+font-size: 20px;
+font-variant: small-caps;
+font-weight: bold;
+}
+section {
+background-color: #2d2a49;
+margin-top: 10px;
+padding: 10px;
+}
+article {
+background-color: rgb(255, 255, 255);
+margin-top: 5px;
+padding: 15px 20px;
+}
+main {
+width: 640px;
+float: left;
+margin-bottom: 10px;
+}
+aside {
+background-color: #2d2a49;
+width: 230px;
+float: right;
+padding: 20px;
+margin-top: 10px;
+}
+footer {
+clear: both;
+background-color: #7a818a;
+color: black;
+padding: 5px 20px;
+}
+
+

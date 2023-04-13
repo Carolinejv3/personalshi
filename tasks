@@ -1,0 +1,16 @@
+
+let isJugoHealthy = true;
+console.log(isJugoHealthy);
+
+const jugovencimiento = 120332;
+console.log(jugovencimiento);
+
+const jugovencimiento = 120332;
+console.log(jugovencimiento);
+
+let a = 0x20;
+let b = 0o30;
+let c = 40;
+console.log(a);
+console.log(b);
+console.log(c);

@@ -1,0 +1,107 @@
+un metodo en progrmación es una especie de función que pertenece a un objeto. Un objeto es un tipo de variable compleja,
+que consiste en muchos valores almacenados en propiedades y metodos. Si se quiere llamar al metodo como objeto, solo escribe el 
+nombre del metodo luego del punto. ej: "Console.TimeEnd();"
+
+si aparece un punto luego de un literal primitivo, Javascript lo interpretará como un objeto y no como una variable primitiva.
+
+ej:
+
+let river = "Mekong";
+let character = river.charAt(2);
+console.log(character); // -> k
+
+Luego de que la operacion se ejecuta, el primitivo vuelve a ser un metodo desde nuestro punto de vista.
+
+ej:
+
+LENGTH
+
+let str= "java script language";
+console.log(str.length); // -> 20
+console.log('test'.length); // -> 4
+
+length te dice la longitud del string contando sus dígitos.
+
+CHARAT
+
+console.log(str.charAt(0)); // -> 'j'
+
+charAt te dice el simbolo que se encuentre en ese espacio dependiendo de que lugar se le indique, este empieza a contar desde cero.
+
+SLICE
+
+Slice te dice los digitos que se encuentran en el medio de las posiciones que seleccionaste. 
+
+console.log(str.slice(0, 5)); // -> 'java'
+console.log('test'.slice(1, 3)); // -> 'es'
+
+SPLIT
+
+Split se encarga de separar el string en donde se encuentre el simbolo que se indique.
+
+Aquí el simbolo es el espacio en el string así que donde sea que encuentre este espacio, se encargará de separar.
+console.log(str.split(' ')); // -> ['java', 'script', 'language']
+
+Aquí el split se encuentra en el punto, en donde se encuentre el punto, realizará una separación.
+console.log('192.168.1.1'.split('.'));  // -> ['192', '168', '1', '1']
+
+
+let kdot = "Me gusta la música de Kendrick Lamar";
+console.log(kdot.split('K'));
+console.log(kdot.slice(22, 36));
+console.log(kdot.length);
+console.log(kdot.charAt(4));
+
+cuando una variable se encuentra en Undefined significa que su valor no ha sido definido. No es recomendable tener variables
+indefinidas en el código, así que cuando esto sea necesario, lo recomendable es ponerlas null.
+
+CONVERSIÓN A STRING
+
+let str = "text";
+let strStr = String(str);
+console.log(`${typeof str} : ${str}`) 
+console.log(`${typeof strStr} : ${strStr}`);
+
+let nr = 42;
+let strNr = String(nr);
+console.log(`${typeof nr} : ${nr}`); 
+console.log(`${typeof strNr} : ${strNr}`);
+
+let bl = true;
+let strBl = String(bl);
+console.log(`${typeof bl} : ${bl}`); 
+console.log(`${typeof strBl} : ${strBl}`);
+
+let bnr = 123n;
+let strBnr = String(bnr);
+console.log(`${typeof bnr} : ${bnr}`); 
+console.log(`${typeof strBnr} : ${strBnr}`);
+
+let un = undefined;
+let strUn = String(un);
+console.log(`${typeof un} : ${un}`);  
+console.log(`${typeof strUn} : ${strUn}`);
+
+let n = null;
+let strN = String(n);
+console.log(`${typeof n} : ${n}`);
+console.log(`${typeof strN} : ${strN}`);
+
+CONVERSIÓN A BOOLEANO
+
+En este tipo de conversiones ocurre que todo lo que no sea 0, NaN, Empty String, undefinded, null termina siendo true (verdadero)
+
+console.log(Boolean(true)); // -> true
+
+console.log(Boolean(42)); // -> true
+console.log(Boolean(0)); // -> false
+console.log(Boolean(NaN)); // -> false
+
+console.log(Boolean("text")); // -> true
+console.log(Boolean("")); // -> false
+
+console.log(Boolean(undefined)); // -> false
+
+console.log(Boolean(null)); // -> false
+
+*/

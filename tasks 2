@@ -1,0 +1,28 @@
+let oracion = `${typeof string} mide ${typeof number}cm  y nació hace ${typeof bigint1} millón de años, pero su 
+madre nació hace ${typeof bigint2} millones. ${typeof string} es clasificación booleana ${typeof isBooleanReal} 
+y su género es ${typeof indef}.`;
+
+let oracion = `${string}, ${number}, ${bigint1}, ${bigint2}, ${isBooleanReal}, ${indef}.`;
+ */
+
+ 
+
+
+const string = "Caroline";
+const number = 160;
+const bigint1 = 1n;
+const bigint2 = bigint1 + 2n;
+const isBooleanReal = true;
+let indef;
+
+let oracion = `${typeof string} : ${string}, ${typeof number} : ${number},
+${typeof bigint1} : ${bigint1}, ${typeof isBooleanReal} : ${isBooleanReal}, 
+${typeof indef} : ${indef}.`;
+
+console.log(oracion);
+
+console.log(typeof string);
+console.log(typeof number);
+console.log(typeof bigint1);
+console.log(typeof bigint2);
+console.log(typeof isBooleanReal);

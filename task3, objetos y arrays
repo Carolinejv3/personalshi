@@ -1,0 +1,178 @@
+
+let string1 = String ("Caroline");
+let string2 = String ("Jimenez");
+let number1 = Number (17);
+let number2 = Number (18);
+let bigint1 = BigInt (1n);
+let bigint2 = BigInt (bigint1 + 2n);
+let isBooleanReal = Boolean(true);
+let isCarolineEighteen = Boolean(false);
+let undef1 = undefined;
+
+
+let oracion = `${typeof string1} : ${string1}, ${typeof string2} : ${string2}, ${typeof number1} : ${number1}, 
+${typeof number2} : ${number2}, ${typeof bigint1} : ${bigint1}, ${typeof bigint2} : ${bigint2}, 
+${typeof isBooleanReal} : ${isBooleanReal}, ${typeof isCarolineEighteen} : ${isCarolineEighteen},
+${typeof indef} : ${undef}.`;
+
+console.log(oracion);
+
+
+console.log(`${string1} [${typeof string1}]`);
+console.log(`${string2} [${typeof string2}]`);
+console.log(`${number1} [${typeof number1}]`);
+console.log(`${number2} [${typeof number2}]`);
+console.log(`${bigint1} [${typeof bigint1}]`);
+console.log(`${bigint2} [${typeof bigint2}]`);
+console.log(`${isBooleanReal} [${typeof isBooleanReal}]`);
+console.log(`${isCarolineEighteen} [${typeof isCarolineEighteen}]`);
+console.log(`${undef1} [${typeof undef1}]`);
+
+
+
+
+let string3 = "1234";
+let number3 = Number(s);
+let bigint3 = BigInt(n);
+let b = Boolean(bi);
+console.log(`${b} [${typeof b}]`);
+
+
+
+let bol1 = true;
+let bol2 = false;
+let bol3 = bol1 + bol2;
+console.log (bol3);
+
+
+
+let edad = true + false;
+let numero = 100 + 500;
+let binombel = 500n + 200n;
+let letra = "Ho" + "la";
+let indef = undefined + undefined;
+
+console.log(`${edad} [${typeof edad}]`);  
+console.log(`${numero} [${typeof numero}]`);
+console.log(`${binombel} [${typeof binombel}]`);
+console.log(`${letra} [${typeof letra}]`);
+console.log(`${indef} [${typeof indef}]`);
+
+let bolynum = true + 300;
+let bolylet = false + "20";
+let bignum = 100n + "200"; 
+
+console.log (bolynum);
+
+let b1 = true + 100; 
+// let b2 = true + 100n; // -> error!
+let b3 = true + "100"; 
+// let n1 = 100 + 200n; // -> error!
+let n2 = 100 + true;
+let n3 = 100 + "200";
+// let bi1 = 100n + 200;  // -> error!
+// let bi2 = 100n + true  // -> error!
+let bi3 = 100n + "200"; 
+let s1 = "100" + 200;
+let s2 = "100" + 200n;
+let s3 = "100" + true;
+let s4 = "abc" + 200;
+let s5 = "abc" + 200n;
+let s6 = "abc" + true;
+
+console.log(`${b1} [${typeof b1}]`);    // -> 101 [number]
+// console.log(`${b2} [${typeof b2}]`);
+console.log(`${b3} [${typeof b3}]`);    // -> true100 [string]
+// console.log(`${n1} [${typeof n1}]`);
+console.log(`${n2} [${typeof n2}]`);    // -> 101 [number]
+console.log(`${n3} [${typeof n3}]`);    // -> 100200 [string]
+// console.log(`${bi1} [${typeof bi1}]`);
+// console.log(`${bi2} [${typeof bi2}]`);
+console.log(`${bi3} [${typeof bi3}]`);  // -> 100200 [string]
+console.log(`${s1} [${typeof s1}]`);    // -> 100200 [string]
+console.log(`${s2} [${typeof s2}]`);    // -> 100200 [string]
+console.log(`${s3} [${typeof s3}]`);    // -> 100true [string]
+console.log(`${s4} [${typeof s4}]`);    // -> abc200 [string]
+console.log(`${s5} [${typeof s5}]`);    // -> abc200 [string]
+console.log(`${s6} [${typeof s6}]`);    // -> abctrue [string]
+
+
+Si quieres modificar un resultado en suma de strings y que realmente se SubmitEvent, no se que apeguen la una a la otra
+hacer lo siguiente:
+
+const str1 = 42 + +"1";
+console.log(str1); -->43
+
+ya que si hacemos:
+
+const str1 = 42 + "1";
+console.log(str1);
+
+el resultado será 421
+
+OBJETOS
+
+Para la creación de objetos solo debemos declarar el nombre que le queremos asignar al proyecto y abrir llaves.
+Esta forma permite que dentro asignemos los campos que queramos. Para imprimirlo simplemente llamamos el nombre el objeto
+y luego el nombre del campo a llamar.
+
+
+let primerobjeto = {
+
+ca: 400,
+str: "text"
+};
+
+console.log(primerobjeto.ca);
+
+La razón más simple para usarlos puede ser el deseo de almacenar varios valores en un solo lugar, 
+que están vinculados entre sí por alguna razón.
+
+let usuario1 = {
+usuario1name:"Osmairy",
+usuario1apellido: "Martinez",
+usuario1edad: 17,
+usuario1email: "osmairymartinez882@gmail.com"
+};
+
+let usuario2 = {
+usuario2name: "Caroline",
+usuario2apellido: "Jimenez",
+usuario2edad: 17,
+usuario2email:"carolinejimenez882@gmail.com"
+};
+
+se pueden agregar campos a un objeto existente e incluso asignar valores diferentes del primer asignado
+
+
+console.log((usuario1edad); --->17
+user1.age = 18 ;
+console.log(usuario1edad); --->18
+
+tambien se pueden eliminar campos ya declarados
+
+console.log((usuario1edad); --->17
+delete user1.age = 18 ;
+console.log(usuario1edad); ---> undefined
+
+ARRAYS
+
+Los arrays a diferencia de los objetos solo sirven para almacenar valores, no campos con valores. Estos no necesitan de un
+llamado particular para funcionar. Estos tambi{en pertenecen al tipo de variables complejas. La forma en la que sabemos
+que elemento del arrays nos estamos refiriendo es porque los arrays cuentan con numeraciones, es decir, tienen un orden. Este
+empieza desde cero.
+
+let dias = ["Domingo", "lunes", "martesw", "Miercoles", "jueves", "viernes", "sabado"];
+console.log(dias[0]);
+console.log(dias[2]);
+console.log(dias[5]); 
+
+dias[0] = "domingo";
+console.log(dias[0]); 
+
+let ArrayVacio = [];
+console.log(ArrayVacio[0]);
+
+
+
+*/

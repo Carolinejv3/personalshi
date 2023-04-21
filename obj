@@ -1,0 +1,16 @@
+
+Normalmente al usar arrays se almacenan los mismos tipos de datos en uno pero en JavaScript no es necesario así que
+se puede hacer esto:
+
+let valores = ["Test", 7, 12.3, false];
+
+Tambien se pueden almacenar arrays dentro de otros arrays
+
+let nombres = [["Olivia", "Emma", "Mia", "Sofia"], ["William", "James", "Daniel"]];
+console.log(nombres[0]); // -> ["Olivia", "Emma", "Mia", "Sofia"]
+console.log(nombres[0][1]); // -> Emma
+console.log(nombres[1][1]); // -> James
+
+let nombresmujeres = nombres[0];
+console.log(nombresmujeres[0]); // -> Olivia
+console.log(nombresmujeres[2]); // -> Mia

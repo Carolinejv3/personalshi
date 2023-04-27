@@ -1,0 +1,163 @@
+IndexOf se usa para indicar cual es la posicion del elemento llamado dentro del Array. 
+
+let names = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(names.indexOf("Mateo")); // -> 2
+console.log(names.indexOf("Victor")); // -> -1
+
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva"];
+console.log(frutas.indexOf("Fresa"));
+
+el push sirve para introducir un nuevo elemento al array una vez creado. Lo coloca al final del array y lo convierte en el elemento con el indice 
+más grande del Array
+
+EJEMPLO 1:
+
+let names = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(names.length); // -> 4
+
+names.push("Amelia");
+console.log(names.length); // -> 5
+console.log(names); // - > ["Olivia", "Emma", "Mateo", 
+"Samuel", "Amelia"]
+
+EJEMPLO 2:
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva"];
+console.log(frutas.length);
+
+frutas.push("Piña");
+console.log(frutas.length);
+console.log(frutas);
+
+El unshift es lo contrario a el push. Este crea un espacio en el array justo al comienzo, en el indice 0, y todo lo que ya estaba declarado,
+pasa a la derecha.
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva"];
+console.log(frutas.length);
+
+frutas.unshift("Piña");
+console.log(frutas.length);
+console.log(frutas);
+
+el elemento pop permite eliminar el ultimo elemento del array luego de su ejecución. 
+
+let names= ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(names.length); // -> 4
+
+let name = names.pop();
+console.log(names.length); // -> 3
+console.log(name); // -> Samuel
+console.log(names); // -> ["Olivia", "Emma", "Mateo"]
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva"];
+console.log(frutas.length);
+console.log(frutas);
+
+let fruta = frutas.pop();
+console.log(fruta);
+console.log(frutas);
+ 
+
+el metodo shift funciona igual que es Pop, simplemente que elimina el primer elemento del array.Pop
+
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva"];
+console.log(frutas.length);
+console.log(frutas);
+
+let fruta = frutas.shift();
+console.log(fruta);
+console.log(frutas);
+console.log(frutas.indexOf("Fresa")); 
+ 
+
+el reverse sirve para invertir el orden de los elementos en el Array. 
+
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva"];
+console.log(frutas);
+frutas.reverse();
+console.log(frutas);
+
+
+El metodo slice sirve para crear un arreglo en base a otro arreglo. Lo que hace es seleccionar la parte que se le indique, dependiendo de la 
+posición de los elementos en el Array.
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva", "Cereza", "Pitahaya"];
+let fruit = frutas.slice(2,4);
+let Scarlet = frutas.slice(2,-2);
+let Caroline = frutas.slice(-3);
+
+console.log(fruit);
+console.log(Scarlet);
+console.log(Caroline);
+
+
+el elemento concat permite concatenar dos arrays diferentes y convertirlo en uno solo 
+
+let frutas = ["Mango", "Fresa", "Banana", "Uva", "Cereza", "Pitahaya"];
+let otrasfrutas = ["Melon", "Kiwi"];
+let todaslasfrutas = frutas.concat(otrasfrutas);
+
+console.log(frutas);
+console.log(otrasfrutas);
+console.log(todaslasfrutas);
+
+
+TASKS 
+
+let ticket = {
+
+    Desde: "Santiago",
+    Hacia: "Santo Domingo",
+    Precio: 350
+};
+
+console.log(`ticket Desde: ${ticket.Desde}`);
+console.log(`ticket Hacia: ${ticket.Hacia}`);
+console.log(`ticket Precio: ${ticket.Precio}`);
+
+let pasajero = {};
+pasajero.nombre = "Caroline";
+pasajero.apellido = "Jimenez";
+console.log(`${pasajero.nombre} ${pasajero.apellido}`);
+
+let libros = [{
+
+    titulo: "Speaking Javascript",
+    autor: "Axel Rauschmayer",
+    paginas: 460
+},
+
+{
+
+    titulo: "Programming Javascript Applications",
+    autor: "Eric Elliott",
+    paginas: 254
+},
+
+{
+
+    titulo: "Understanding ECMAScript 6",
+    autos: "Nicholas C. Zakas",
+    paginas: 352
+}
+
+];
+
+let libronuevo = {
+
+    titulo: "Learning Javascript Desing Patterns",
+    autor: "Addy Osmani",
+    paginas: 254
+
+};
+
+libros.push(libronuevo);
+console.log(libros.length);
+console.log(libros[0].titulo);
+console.log(libros[1].titulo);
+console.log(libros[2].titulo);
+console.log(libros[3].titulo);
+*/

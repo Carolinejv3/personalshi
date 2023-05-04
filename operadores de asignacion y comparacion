@@ -1,0 +1,46 @@
+not= !!! (se convierte a booleano, si es verdadero, se convierte a falso, y viceversa)
+
+and=&&& (si el primer operando es false, dara la vuelta y no se comprobará de nuevo)
+
+or=|| (si el primer operando es true, dara la vuelta y no se comprobará de nuevo)
+
+
+
+//CONCATENACION
+
+// con operador string
+let saludos = "Me gusta la musica de ";
+console.log(saludos + "Kendrick Lamar");
+
+// con operadores de asignacion
+
+let oracion = "Feliz Año ";
+oracion += "Nuevo ";
+oracion += 2023;
+console.log(oracion); 
+
+el operador de igual "== (equality)" y "=== (identity)" cumplen practicamente la misma funcion, solamente que "===" es mucho más estricto y se 
+necesita que las dos partes sea identicas para que pueda retornar verdadero.
+
+se debe usar el tipo identity a menos de que se permita que el valor sea positivo incluso si no son exactamente el mismo
+valor.
+
+tambien estan los siguientes operadores
+
+noidentity= "!==" arroja true si los operadores no son identicos. O sea, son iguales pero de tipos diferentes.
+inequality= "!=" arroja verdadero si los operadores son diferentes.
+
+
+console.log(10 === "10"); false
+console.log(10 == "10"); true
+console.log(10 === 10); true
+console.log(10 != 20); true
+console.log(10 !== "10"); true
+console.log(10 !== 10); false
+
+TypeOf= dice de que tipo es el dato requerido.
+InstanceOf= se dedica a decir si una variable contiene un array dentro.
+Delete= permite eliminar un campo especifico de un objeto indicando el nombre del objeto y seguido de un punto, el nombre del campo.
+ 
+
+ */

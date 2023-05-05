@@ -1,0 +1,125 @@
+//TASK 1
+let nombrebox = window.prompt("Cuál es el nombre de tú caja?");
+nombrebox = nombrebox ? nombrebox : "misteriosa";
+
+let ancho = prompt("Qué ancho tiene la caja " + nombrebox );
+let altura = prompt("Qué altura tiene la caja " + nombrebox);
+let longitud = prompt("Qué longitud tiene la caja " + nombrebox);
+
+let volumen = (ancho*altura*longitud);
+let resultado = alert("El volumen de la caja " + nombrebox + " es: " + volumen);
+  
+
+let nombre = prompt("Ingrese su nombre");
+    nombre = nombre ? nombre : "Anónimo";
+    let num = prompt("Ingrese su número telefónico");
+    let correo = prompt("Ingrese su email");
+
+let contacts = [{
+    name: "Maxwell Wright",
+    phone: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+    }, {
+    name: "Raja Villarreal",
+    phone: "0866 398 2895",
+    email: "posuere.vulputate@sed.com"
+    }, {
+    name: "Helen Richards",
+    phone: "0800 1111",
+    email: "libero@convallis.edu"
+    }, {
+    name: nombre,
+    phone: num,
+    email: correo
+    }];
+
+    
+let ult = contacts.length - 1;
+
+console.log('${contacts[0].name} / ${contacts[0].phone} / ${contacts[0].email}');
+console.log('${contacts[last].name} / ${contacts[last].phone} / ${contacts[last].email}');
+console.log(contacts[3]);
+
+/*let nombre = prompt("Ingrese su nombre");
+    nombre = nombre ? nombre : "Anónimo";
+    let num = prompt("Ingrese su número telefónico");
+    let email = prompt("Ingrese su email");
+
+    let resultado = alert("El ultimo contacto es " + nombre + " ,su número de teléfono es " + num + " y su email es " + email);
+    
+
+    
+    
+TEST
+
+s = true && false || true;
+console.log(s);
+
+
+m = 20 && 5;
+console.log(m);
+
+
+g = true && "false";
+console.log(g);
+
+
+let str = "10";
+let a = (str = 10);
+let b = (str == 10);
+let c = (str === 10);
+console.log(a);
+console.log(b);
+console.log(c);
+
+
+c = 6 * 2 < 20 - 15;
+console.log(c);
+
+
+let choice = confirm("Are you ready") ? "true" : "false";
+console.log(choice);
+
+let str = "12";
+    str = +str;
+    console.log(str);
+   
+
+    let n = 2 * 3 ** 3 - 1;
+    console.log(n);
+     
+
+    n = !(true && false || true);
+    console.log(n);
+    
+
+    let test = prompt("hello", "world");
+    console.log(test);
+   
+
+    c = "abcd" > "Abcd";
+console.log(c);
+
+
+let str = "12";
+str = +str;
+console.log(typeof str);
+ 
+
+n = false || "false";
+console.log(n);
+
+
+n = 2;
+n **=3;
+console.log(n);
+
+
+let n = 10;
+let m = ++n;
+console.log(m);
+
+
+n = 20 || 5 ;
+console.log(n);
+*/

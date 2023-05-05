@@ -1,0 +1,49 @@
+// Delete
+let usuario = {
+  nombre: "Alicia",
+  edad: 38
+};
+console.log(usuario.edad); 
+delete usuario.edad;
+console.log(usuario.edad);
+
+
+//typeof
+let año = 2023;
+console.log(typeof año);
+console.log(typeof false);
+
+   
+//InstanceOf
+let nombres = ["Patti", "Bob"];
+let nombre = nombres[0];
+console.log(nombre instanceof Array); 
+console.log(nombres instanceof Array);
+
+
+//Ternary
+let nombres = 1>3 ? "Ana" : "Alejandro";
+console.log(nombres);
+
+
+
+//ALERT
+alert("Hola a todos, soy Caroline!")            
+alert("Hola por segunda vez");
+
+
+/CONFIRM
+let remover = confirm("Remover toda la información?");
+let mensaje = remover ? "Eliminando información" : "Cancelado"
+
+console.log(mensaje);
+
+//En este ejemplo, si le damos a aceptar, saldrá la opción de "Eliminando Información" pero si elegimos la de cancelar dirá "Cancelado"
+
+
+//PROMPT
+let nombre = window.prompt("Cuál es tu nombre?");
+nombre = nombre ? nombre : "anonymous";
+
+let edad = prompt("Hola " + nombre + ", qué edad tienes?");
+alert(nombre + " tiene " + edad + " años");

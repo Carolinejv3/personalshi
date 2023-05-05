@@ -1,0 +1,61 @@
+console.log(costoEnvio);
+
+if (userAge > 21 && (cartValue >= 300 || points >= 500)) {
+    shippingCost = 0;
+}
+console.log(costoEnvio);
+
+
+
+
+let usuarioListo = confirm("Estás listo?");
+
+if (usuarioListo){
+    console.log("El usuario está listo");
+} else{
+    console.log("El usuario no está listo");
+}
+
+
+
+let meQuieres = confirm("Me quieres?");
+if (meQuieres){
+    console.log("Gracias por quererme");
+} else{
+    console.log("Gracias por no quererme");
+}
+
+
+const costoSeguro = 500;
+
+let valorEnvio = 1000;
+let esLaOrdenValida = true;
+
+let usuarioEdad = 21;
+let puntos = 200;
+let valorCarrito = 100;
+let tieneCodigoPromocion = false;
+let tienePermisoParental = false;
+let añadirSeguro = false;
+
+//calcular valor del envío
+if ((usuarioEdad > 65) || (usuarioEdad >= 21 && (tieneCodigoPromocion || valorCarrito > 300 || puntos > 500))) {
+valorEnvio = 0;
+} else if (usuarioEdad < 21 && tienePermisoParental) {
+valorEnvio = valorEnvio - 5;
+} else if (usuarioEdad < 21) {
+esLaOrdenValida = false;
+}
+
+//tener en cuenta el seguro 
+if (esLaOrdenValida && añadirSeguro && !tieneCodigoPromocion) {
+valorEnvio += costoSeguro;
+}
+
+//mensaje final
+if (esLaOrdenValida) {
+console.log(valorEnvio);
+} else {
+console.log("Cannot order if under 21");
+}
+*/

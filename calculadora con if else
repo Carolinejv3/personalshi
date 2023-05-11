@@ -1,0 +1,17 @@
+let PrimerNumero = Number(prompt("Entrar el primer Numero"));
+let SegundoNumero = Number(prompt("Entrar el segundo Numero"));
+let operando = prompt("Entrar el operando de su elección(+, -, * or /)");
+let resultado;
+
+if (!Number.isNaN(PrimerNumero) && !Number.isNaN(SegundoNumero)) {
+    switch (operando) {
+        case "+": resultado = PrimerNumero + SegundoNumero; break;
+        case "-": resultado = PrimerNumero - SegundoNumero; break;
+        case "*": resultado = PrimerNumero * SegundoNumero; break;
+        case "/": resultado = PrimerNumero / SegundoNumero; break;
+        default: resultado = "Error: operando desconocido";
+    }
+} else {
+    resultado = "Error: al menos uno de los dígitos no es un numero";
+}
+alert(resultado);

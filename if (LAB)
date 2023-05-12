@@ -1,0 +1,67 @@
+let contactos = [{
+    nombre: "Maxwell Wright",
+    num: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+  }, {
+    nombre: "Raja Villarreal",
+    num: "0866 398 2895",
+    email: "posuere.vulputate@sed.com"
+  }, {
+    nombre: "Helen Richards",
+    num: "0800 1111",
+    email: "libero@convallis.edu"
+  }];
+  
+  function MostrarPrimerContacto() {
+    if (contactos.length > 0) {
+      console.log("Primer contacto:");
+      console.log(contactos[0]);
+    } else {
+      console.log("La lista de contactos está vacía.");
+    }
+  }
+  
+  function MostrarUltimoContacto() {
+    if (contactos.length > 0) {
+      console.log("Ultimo contacto:");
+      console.log(contactos[contactos.length - 1]);
+    } else {
+      console.log("La lista de contactos está vacía.");
+    }
+  }
+  
+  function AñadirNuevoContacto() {
+    const nombre = prompt("Ingresa el nombre :");
+    const num = prompt("Ingresa el número de teléfono:");
+    const email = prompt("Ingresa el email:");
+  
+    if (nombre && num && email) {
+      const ContactoNuevo = {
+        nombre: nombre,
+        num: num,
+        email: email
+      };
+      contactos.push(ContactoNuevo);
+      console.log("Nuevo contacto añadido correctamente.");
+    } else {
+      console.log("Por favor ingresar toda la información correctamente para añadir el contacto");
+    }
+  }
+  
+  const accion = prompt("Qué quiere hacer o mostrar de la lista de contactos? (primero, último, nuevo)");
+  
+  switch (accion) {
+    case "primero" :
+        MostrarPrimerContacto();
+      break;
+    case "ultimo":
+        MostrarUltimoContacto();
+      break;
+    case "nuevo":
+        AñadirNuevoContacto();
+      break;
+    default:
+      console.log("Acción invalida.");
+      break;
+  }
+  

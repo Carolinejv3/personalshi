@@ -1,0 +1,104 @@
+for (let i = 0; i < 11; i++) {
+    console.log(i);
+}
+
+const persona = {
+  nombre: "Juan",
+  edad: 30,
+  profesion: "ingeniero"
+};
+
+for (let propiedad in persona) {
+  console.log(propiedad + ": " + persona[propiedad]);
+}
+
+
+//EL METODO BREAK HACE QUE EN EL CODIGO, SI SE LLEGA A LA CONDICION ESTABLECIDA, EL LOOP SE ROMPA Y TERMINE AHI.
+
+let i = 0;
+// An infinite loop
+while (true){
+    console.log(i);
+    i++;
+    if (i >= 6) {
+        break;
+    }
+}
+
+alert('Exited the loop with a break (${i}).');
+
+//CON EL METODO CONTINUAR SUCEDE QUE CUANDO EL LOOP LLEGA A CUMPLIR LA CONDICION, EL CICLO SE VOLARA A LA SIGUIENTE ITERACION.
+
+for (let i = 0; i < 10; i++) {
+    if (i == 3) {
+        continue;
+    }
+    console.log(i);
+}
+
+Aqui un ejemplo del break trough que muestra lo util que puede ser
+
+let gate = prompt("Choose gate: a, b, or c");
+let win = false;
+
+switch (gate) {
+    case "a":
+    case "A":
+    case 1:
+    case "1":
+        alert("Gate A: empty");
+        break;
+    case "b":
+    case "B":
+    case 2:
+    case "2":
+        alert("Gate B: main prize");
+        win = true;
+        break;
+    case "c":
+    case "C":
+    case 3:
+    case "3":
+        alert("Gate C: empty");
+        break;
+    default:
+        alert("No gate " + String(gate));
+}
+
+if (win) {
+    alert("Winner!");
+}
+
+
+
+AQUI DE UNA FORMA MAS ORGANIZADA:
+
+let gate = prompt("Choose gate: a, b, or c");
+let win = false;
+
+switch (gate) {
+    case "a":
+        case "A":{
+        let message = "Gate A";
+        console.log(message);
+        break;
+    }
+    case "b":
+         case "B":{
+        let message = "Gate B";
+        console.log(message);
+        break;
+    }
+    case "c": {
+        let message = "Gate C";
+        console.log(message);
+        break;
+    }
+    default:
+        alert("No gate " + String(gate));
+}
+
+if (win) {
+    alert("Winner!");
+}
+*/

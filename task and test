@@ -1,0 +1,215 @@
+  
+    let contactos = [{
+        nombre: "Maxwell Wright",
+        num: "(0191) 719 6495",
+        email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+      }, {
+        nombre: "Raja Villarreal",
+        num: "0866 398 2895",
+        email: "posuere.vulputate@sed.com"
+      }, {
+        nombre: "Helen Richards",
+        num: "0800 1111",
+        email: "libero@convallis.edu"
+      }];
+      
+      while (true) {
+      let accion = prompt("Qué quiere hacer o mostrar de la lista de contactos? (primero, último, nuevo, todos, salir)");
+
+
+      switch (accion) {
+        case "primero": 
+        case "Primero":
+        case "1":
+            MostrarPrimerContacto();
+          break;
+        case "ultimo":
+            case "Ultimo":
+                case "2":
+            MostrarUltimoContacto();
+          break;
+        case "nuevo":
+            case "Nuevo":
+                case "3":
+            AñadirNuevoContacto();
+          break;
+          case "Todos":
+            case "todos":
+                case "4":
+            MostrarTodosContactos();
+            break;
+            case "salir":
+             case "5":
+            salir();
+            break;
+           default:
+          console.log("Acción invalida.");
+          break;
+      }
+    }
+
+      function MostrarPrimerContacto() {
+        if (contactos.length > 0) {
+          console.log("Primer contacto:");
+          console.log(contactos[0]);
+        } else {
+          console.log("La lista de contactos está vacía.");
+        }
+      }
+      
+      function MostrarUltimoContacto() {
+        if (contactos.length > 0) {
+          console.log("Ultimo contacto:");
+          console.log(contactos[contactos.length - 1]);
+        } else {
+          console.log("La lista de contactos está vacía.");
+        }
+      }
+      
+      function MostrarTodosContactos(){
+          if (contactos.length > 0){
+              console.log("Todos los contactos:");
+              console.log(contactos);
+          }else { 
+              console.log("La lista de contactos está vacía");
+          }
+      }
+
+      function AñadirNuevoContacto() {
+        const nombre = prompt("Ingresa el nombre :");
+        const num = prompt("Ingresa el número de teléfono:");
+        const email = prompt("Ingresa el email:");
+      
+        if (nombre && num && email) {
+          const ContactoNuevo = {
+            nombre: nombre,
+            num: num,
+            email: email
+          };
+          contactos.push(ContactoNuevo);
+          console.log("Nuevo contacto añadido correctamente.");
+          console.log(ContactoNuevo);
+        } else {
+          console.log("Por favor ingresar toda la información correctamente para añadir el contacto");
+        }
+      }
+
+
+      function salir() {
+        if (accion === "salir") {
+          console.log("Saliendo");
+        }
+      }
+
+ 
+
+
+
+
+
+
+
+
+      
+
+    
+    const contacts = [
+        {
+          name: "Maxwell Wright",
+          phone: "(0191) 719 6495",
+          email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+        },
+        {
+          name: "Raja Villarreal",
+          phone: "0866 398 2895",
+          email: "posuere.vulputate@sed.com"
+        },
+        {
+          name: "Helen Richards",
+          phone: "0800 1111",
+          email: "libero@convallis.edu"
+        }
+      ];
+      
+      while (true) {
+        const action = prompt("What would you like to do? (first, last, all, new, quit):");
+      
+        if (action === "first") {
+          if (contacts.length > 0) {
+            console.log("First Contact:");
+            console.log(contacts[0]);
+          } else {
+            console.log("Contact list is empty.");
+          }
+        } else if (action === "last") {
+          if (contacts.length > 0) {
+            console.log("Last Contact:");
+            console.log(contacts[contacts.length - 1]);
+          } else {
+            console.log("Contact list is empty.");
+          }
+        } else if (action === "all") {
+          if (contacts.length > 0) {
+            console.log("All Contacts:");
+            contacts.forEach((contact) => {
+              console.log(contact);
+            });
+          } else {
+            console.log("Contact list is empty.");
+          }
+        } else if (action === "new") {
+          const name = prompt("Enter the contact's name:");
+          const phone = prompt("Enter the contact's phone number:");
+          const email = prompt("Enter the contact's email address:");
+          const newContact = { name, phone, email };
+          contacts.push(newContact);
+          console.log("Contact added successfully.");
+        } else if (action === "quit") {
+          console.log("Exiting the program.");
+          break;
+        } else {
+          console.log("Invalid action. Please try again.");
+        }
+      }
+    
+
+      let point = {x:100, y:200};
+      for (let f in point) console.log(f);
+
+        
+
+      let steps = [1, 2, 3];
+      for (let n of steps) console.log(n);
+
+
+      //switch no es un loop
+      //do while chequea la condicion del loop solo despues que se ha terminado la iteracion
+      //el for of solo hace loop por los elementos del array
+      
+
+      let animals = ["dog", "cat", "hamster", "rabbit"];
+      for (let n of animals) 
+      console.log(n);    
+      
+     
+
+      let x = 100;
+      if (x<100)
+      x = 20;
+      console.log(x);
+
+     
+
+      let test;
+      for (let a = 4; a < 4; a++){
+        console.log("test");
+      }
+        
+
+      let car = {make: "citro", model:"DS"};
+      for (let f in car) console.log(f);
+
+      */
+
+      for (let x = 10; x > 1; x -=5) 
+      console.log("hello");

@@ -1,0 +1,66 @@
+
+    function factorial (n) {
+      let result = 1;
+      while (n > 1) {
+          result *= n;
+          n--;
+      }
+      return result;
+  }
+  
+  console.log(factorial(3)); // -> 720
+
+  
+
+
+
+function añadirAlCarrito(item1, item2){
+  return item1 + item2;
+}
+
+  function multiplicar(item1, item2){
+    return item1 * item2;
+  }
+
+function operacion(func, item1, item2){
+  return func(item1, item2);
+}
+
+console.log(operacion(añadirAlCarrito, 50, 40));
+console.log(operacion(multiplicar, 50, 40));
+
+
+
+EXPRESIONES DE FUNCIONES
+
+Una manera de acortar la declaracion de una funcion es declarar la variable que la almacenará al mismo tiempo que se declara la funcion
+
+EJEMPLO1:
+
+function add(a, b) {
+  return a + b;
+}
+
+let myAdd = add;
+console.log(myAdd(10, 20));     // -> 30
+console.log(add(10, 20));   // -> 30
+
+EJEMPLO2:
+
+let myAdd = function(a, b) {
+    return a + b;
+}
+
+console.log(myAdd(10, 20)); // -> 30
+
+
+
+setTimeout(function() {
+  console.log("Hola, mundo!");
+}, 2000);
+
+
+window.addEventListener("click", function() {
+  console.log("clicked!");
+});
+*/

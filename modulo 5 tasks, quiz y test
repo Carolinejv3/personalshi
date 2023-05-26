@@ -1,0 +1,307 @@
+
+
+UNO
+
+let numbers = [50, 10, 40, 30, 20];
+function compareNumbers(a, b) {
+    let retVal = 0;
+    if (a < b) {
+        retVal = -1;
+    } else if(a > b) {
+        retVal = 1;
+    }
+    return retVal;
+}
+let sorted = numbers.sort(compareNumbers);
+console.log(sorted); // [10, 20, 30, 40, 50]
+
+
+let numbers = [50, 10, 40, 30, 20];
+let sorted = numbers.sort((a, b) => a - b);
+console.log(sorted); // [10, 20, 30, 40, 50]
+
+
+DOS
+
+
+
+function add(a, b){
+if (!Number.isInteger(a) || !Number.isInteger(b)){
+  return NaN;
+}
+return a + b;
+}
+
+function mult(a, b){
+  if (!Number.isInteger(a) || !Number.isInteger(b)){
+    return NaN;
+  }
+  return a * b;
+  }
+
+  function sub(a, b){
+    if (!Number.isInteger(a) || !Number.isInteger(b)){
+      return NaN;
+    }
+    return a - b;
+    }
+
+    console.log(add(28, 400));
+    console.log(mult(5, 5));
+    console.log(sub(60, 30));
+
+
+let sumar = (a, b) => !Number.isInteger(a) || !Number.isInteger(b) ? Nan: a + b;
+let restar =  (a, b) => !Number.isInteger(a) || !Number.isInteger(b) ? NaN: a - b;
+let multiplicar = (a, b) => !Number.isInteger(a) || !Number.isInteger(b) ? NaN: a * b;
+
+console.log(sumar(30, 50));
+console.log(restar(30, 15));
+console.log(multiplicar(60, 50));
+
+TRES
+
+console.log(action(add, 12, 10)); // -> 22
+console.log(action(sub, 12, 10)); // -> 2
+console.log(action(mult, 10, 10.1)); // -> NaN
+
+
+let action = (callback, a, b) => callback(a, b);
+// or
+let action = function (callback, a, b) {
+    return callback(a, b);
+}
+// or
+function action(callback, a, b) {
+    return callback(a, b);
+}
+
+CUATRO
+
+let contador = 1;
+let IdIntervalo = setInterval(function () {
+    console.log(contador++);
+}, 2000);
+setTimeout(function () {
+    clearInterval(IdIntervalo)
+}, 20000);
+
+CINCO
+
+let fibbRec = function (n) {
+    let retVal = 0;
+    if (n != 0) {
+        if (n === 1) {
+            retVal = 1;
+        } else {
+            retVal = fibbRec(n - 1) + fibbRec(n - 2);
+        }
+    }
+    return retVal;
+}
+
+SEIS
+
+let fibb = n => n == 0 ? 0 : (n == 1 ? 1 : fibb(n - 1) + fibb(n - 2));
+
+SIETE
+
+function fibbIter(n) {
+    let a = 0, b = 1;
+    for (let i = 2; i <= n; i++) {
+        let c = a;
+        a = b;
+        b += c;        
+    }
+    return b;
+}
+
+
+
+let terminado = false;
+while (terminado != true) {
+
+let contactos = [{
+  nombre: "Maxwell Wright",
+  num: "(0191) 719 6495",
+  email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+}, {
+  nombre: "Raja Villarreal",
+  num: "0866 398 2895",
+  email: "posuere.vulputate@sed.com"
+}, {
+  nombre: "Helen Richards",
+  num: "0800 1111",
+  email: "libero@convallis.edu"
+}];
+
+function MostrarPrimerContacto() {
+  if (contactos.length > 0) {
+    console.log("Primer contacto:");
+    console.log(contactos[0]);
+  } else {
+    console.log("La lista de contactos está vacía.");
+  }
+}
+
+function MostrarUltimoContacto() {
+  if (contactos.length > 0) {
+    console.log("Ultimo contacto:");
+    console.log(contactos[contactos.length - 1]);
+  } else {
+    console.log("La lista de contactos está vacía.");
+  }
+}
+
+function MostrarTodosContactos(){
+    if (contactos.length > 0){
+        console.log("Todos los contactos:");
+        console.log(contactos);
+    }else { 
+        console.log("La lista de contactos está vacía");
+    }
+}
+
+function AñadirNuevoContacto() {
+  const nombre = prompt("Ingresa el nombre :");
+  const num = prompt("Ingresa el número de teléfono:");
+  const email = prompt("Ingresa el email:");
+
+  if (nombre && num && email) {
+    const ContactoNuevo = {
+      nombre: nombre,
+      num: num,
+      email: email
+    };
+    contactos.push(ContactoNuevo);
+    console.log("Nuevo contacto añadido correctamente.");
+    console.log(ContactoNuevo);
+  } else {
+    console.log("Por favor ingresar toda la información correctamente para añadir el contacto");
+  }
+}
+
+function mostrarContactos(contactos, index) {
+  if (contactos instanceof Array && index >= 0 && index < contactos.length) {
+    console.log("Contacto en el índice " + index + ":");
+    console.log(contactos[index]);
+  } else {
+    console.log("La lista de contactos es inválida o el índice está fuera de rango.");
+  }
+}
+
+
+function salir() {
+  if (terminado = continuar === true ? false : true) {
+    console.log("Saliendo");
+  }
+}
+
+const accion = prompt("Qué quiere hacer o mostrar de la lista de contactos? (primero, último, nuevo, todos, salir, todo)");
+
+
+switch (accion) {
+  case "primero": 
+  case "Primero":
+  case "1":
+      MostrarPrimerContacto();
+    break;
+  case "ultimo":
+      case "Ultimo":
+          case "2":
+      MostrarUltimoContacto();
+    break;
+  case "nuevo":
+      case "Nuevo":
+          case "3":
+      AñadirNuevoContacto();
+      break;
+      case "todo":
+          case "TODO":
+              case "4":
+          MostrarUltimoContacto();
+    break;
+    case "Todos":
+      case "todos":
+          case "5":
+      MostrarTodosContactos();
+      break;
+      case "Salir":
+        case "salir":
+            case "6":
+        salir();
+  default:
+    console.log("Acción invalida.");
+    break;
+}
+}
+
+
+
+
+
+
+let x= 10;
+
+function test(){
+  let x = 20;
+  console.log(x);
+}
+
+test();
+
+
+let mul= (m, n) =>  m * n;
+
+
+
+function mul(m, n){
+  return (m * n);
+}
+
+console.log(mul(12, 12));
+
+
+
+
+function test(counter){
+  console.log("test");
+  if (counter > 0)
+  test(--counter);
+}
+
+test(3);
+
+
+let x = 10;
+
+function test(){
+  let x = 20;
+  console.log(x);
+}
+
+
+let x = 10;
+
+function test(x){
+  console.log(x);
+}
+test(20);
+
+
+let x =10;
+let y = 20;
+
+function test(y){
+  console.log(y);
+}
+
+test(x);
+
+
+let show = function(){
+  console.log(test);
+}
+
+setTimeout(show, 2000);
+*/
